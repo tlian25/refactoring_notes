@@ -1,4 +1,13 @@
-// Refactored Example
+// Refactored Example 1
+
+/*
+Major Stages
+1. decomposing original function into set of nested functions
+2. separate calculation and printing code
+3. introducing a polymorphic calculator class for calculation logic
+
+
+*/
 
 const lib = require("./createStatementData.js");
 
