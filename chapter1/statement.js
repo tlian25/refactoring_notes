@@ -1,14 +1,14 @@
 // Refactored Example
 
-import {createStatementData} from './createStatementData.js';
+const lib = require("./createStatementData.js");
 
 function statement(invoice, plays) {
-    return renderPlainText(createStatementData(invoice, plays));
+    return renderPlainText(lib.createStatementData(invoice, plays));
 }
 
 
 
-function renderPlainText(data, plays) {
+function renderPlainText(data) {
 
     // Main function portion
     let result = `Statement for ${data.customer}\n`;    

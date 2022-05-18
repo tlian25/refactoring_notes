@@ -1,5 +1,5 @@
 // create statement data
-export function createStatementData(invoice, plays) {
+function createStatementData(invoice, plays) {
 
     const statementData = {};
     statementData.customer = invoice.customer;
@@ -68,3 +68,6 @@ export function createStatementData(invoice, plays) {
         return data.performances.reduce((total, p) => total + p.amount, 0);
     }
 }
+
+
+module.exports = { createStatementData };
